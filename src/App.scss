@@ -1,0 +1,145 @@
+.featureCourseCard {
+}
+.wrapper {
+  overflow: hidden;
+  height: 900px;
+}
+
+.slider-container {
+  animation: slidingCards 90s linear infinite;
+  position: relative;
+  width: 6000px;
+  height: 800px;
+  .card-style {
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 5px;
+    position: absolute;
+
+    h4 {
+      color: white;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      opacity: 0;
+      animation: slidingCardsText 10s cubic-bezier(0.88, -0.03, 0.12, 1.02)
+        infinite;
+    }
+  }
+}
+
+.card-animation-1 {
+  animation: cardZoom1 10s cubic-bezier(0.88, -0.03, 0.12, 1.02) infinite;
+}
+
+.card-animation-2 {
+  animation: cardZoom2 10s cubic-bezier(0.88, -0.03, 0.12, 1.02) infinite;
+}
+
+.card-animation-3 {
+  animation: cardZoom3 10s cubic-bezier(0.88, -0.03, 0.12, 1.02) infinite;
+}
+
+@keyframes slidingCards {
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: 3000px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes cardZoom1 {
+  0% {
+    height: 100px;
+    width: 100px;
+  }
+  40% {
+    height: 100px;
+    width: 100px;
+  }
+
+  50% {
+    height: 150px;
+    width: 200px;
+  }
+  90% {
+    height: 100px;
+    width: 100px;
+  }
+  100% {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@keyframes cardZoom2 {
+  0% {
+    height: 100px;
+    width: 100px;
+  }
+  40% {
+    height: 100px;
+    width: 100px;
+  }
+
+  50% {
+    height: 150px;
+    width: 250px;
+  }
+  90% {
+    height: 200px;
+    width: 200px;
+  }
+  100% {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@keyframes cardZoom3 {
+  0% {
+    height: 100px;
+    width: 100px;
+  }
+  40% {
+    height: 100px;
+    width: 100px;
+  }
+
+  50% {
+    height: 200px;
+    width: 300px;
+  }
+  90% {
+    height: 100px;
+    width: 100px;
+  }
+  100% {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@keyframes slidingCardsText {
+  0% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
