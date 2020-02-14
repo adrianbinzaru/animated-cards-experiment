@@ -1,3 +1,9 @@
+Played around with some css animations to create a sliding and zooming cards banner:
+
+![demo gif](animated-cards-playground/demo.gif)
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
