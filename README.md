@@ -1,6 +1,6 @@
 Played around with some css animations to create a sliding and zooming cards banner:
 
-![demo gif](animated-cards-playground/demo.gif)
+![demo gif](/demo.gif)
 
 ---
 
